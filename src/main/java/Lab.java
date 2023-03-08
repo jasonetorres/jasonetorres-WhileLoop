@@ -32,12 +32,15 @@ public class Lab {
      *            (exclusive - for example, when end is 5, we calculate 0+1+2+3+4)
      *
      **/
-    public int whileExample(int end){
+    public int whileExample(int end) {
         int sum = 0;
-        int i = 0;
-
-//        code here
-
+        int i = 0; // start from 1 since we want to sum integers from 1 to 'end'
+    
+        while (i < end) { // continue looping until 'i' reaches 'end'
+            sum += i; // add 'i' to the current sum
+            i++; // increment 'i'
+        }
         return sum;
     }
 }
+    
